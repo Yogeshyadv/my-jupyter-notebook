@@ -1,0 +1,15 @@
+{
+    "name": "Jupyter Notebook",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-toolsai.jupyter"
+    ],
+    "postCreateCommand": "pip install notebook",
+    "forwardPorts": [
+        8888
+    ],
+    "remoteUser": "vscode"
+}
